@@ -1,3 +1,4 @@
+import numpy as np
 from typing import List, Tuple, Set, TypeVar
 
 N = TypeVar('N', int, float)
@@ -106,46 +107,9 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :param tuple_in: A tuple
     :return: a A list containing duplicate items in the tuple_in parameter
     """
-    count_map = []
-    for i in tuple_in:
-        count_map[i] = count_map.get(i, 0) + 1
-        print(count_map)
-
-    listOfTuple = [('a', 'e'), ('b', 'x'), ('b', 'x'),
-                   ('a', 'e'), ('b', 'x')]
-
-
-
-
-print(result)
-
-
-tuple_in = [(1, 2), (3, 4), (5, 6)]
-
-# result list initialization
-result = []
-for t in tuple_in:
-    for x in t:
-        result.append(x)
-
-
-
-
-
-
-
-print("**** Find the occurence count an element in the Tuple *****")
-
-# Get the count of how many times 34 appears in tuple
-count = tupleObj.count(34)
-
-print("Count of 34 in tuple is : ", count)
-
-# Based on occurrence count check if element exists in tuple
-if tupleObj.count(34) > 0:
-    print("34 Found in Tuple")
-else:
-    print("34 Not Found in Tuple")
-
-
-res = [(val, pow(val, 3)) for val in list1]
+    result = []
+    for t in tuple_in:
+        for x in t:
+            result.append(x)
+    x = np.array(result)
+    print(np.unique(x))
