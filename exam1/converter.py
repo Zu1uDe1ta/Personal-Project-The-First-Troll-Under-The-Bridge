@@ -7,7 +7,9 @@ def meters_to_feet(meters: float) -> float:
     :param meters: A float representing a measurement in meters.
     :return: A float representing the input measurement converted to feet.
     """
-    pass  # implement me
+    meters = float(input("Enter height in meters:"))
+    feet = meters // .3048
+    print('%0.2f meters is equal to %0.2f feet' % (meters, feet))
 
 
 def feet_to_meters(feet: float) -> float:
@@ -19,7 +21,9 @@ def feet_to_meters(feet: float) -> float:
     :param feet: A float representing a measurement in feet.
     :return: A float representing the input measurement converted to meters.
     """
-    pass  # implement me
+    feet = float(input("Enter height in feet:"))
+    meters = feet * 0.3048
+    print('%0.2f feet is equal to %0.2f meters' % (feet, meters))
 
 
 def kilometer_to_miles(kilometers: float) -> float:
@@ -31,7 +35,11 @@ def kilometer_to_miles(kilometers: float) -> float:
     :param kilometers: A float representing a measurement in kilometers.
     :return: A float representing the input measurement converted to miles.
     """
-    pass  # implement me
+    kilometers = float(input("Enter height in kilometers:"))
+    conv = 0.621371
+    miles = kilometers * conv
+    print('%0.3f kilometers is equal to %0.2f miles' % (kilometers, miles))
+
 
 
 def miles_to_kilometers(miles: float) -> float:

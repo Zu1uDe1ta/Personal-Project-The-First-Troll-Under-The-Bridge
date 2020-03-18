@@ -17,6 +17,7 @@ class ConverterTest(unittest.TestCase):
             with self.subTest(f"{meter_in} -> {expected}"):
                 self.assertEqual(expected, converter.meters_to_feet(meter_in))
 
+
     def test_feet_to_meters(self):
         test_cases = [
             (1, .30),
