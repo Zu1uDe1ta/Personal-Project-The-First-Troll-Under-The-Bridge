@@ -11,12 +11,8 @@ def find_lowest_value(list_in: List[N]) -> N:
     :param list_in: A list of numbers (integers and/or floats)
     :return: The lowest number in the list
     """
-    min = list[ 0 ]
-    for a in list:
-        if a < min:
-            min = a
-    return min
-
+    list = input()
+    return("lowest number in the list is:", min(list))
 
 
 def find_highest_value(list_in: List[N]) -> N:
@@ -26,7 +22,9 @@ def find_highest_value(list_in: List[N]) -> N:
     :param list_in: A list of numbers (integers and/or floats)
     :return: The highest number in the list
     """
-    pass  # implement me
+    list = input()
+    return("the highest number in the list:", max(list))
+
 
 
 def find_value(value_to_find, values: C) -> int:
