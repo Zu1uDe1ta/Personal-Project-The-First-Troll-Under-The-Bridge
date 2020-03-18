@@ -107,3 +107,34 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :return: a A list containing duplicate items in the tuple_in parameter
     """
     pass  # implement me
+
+
+tuple_in = [(1, 2), (3, 4), (5, 6)]
+
+# result list initialization
+result = []
+for t in tuple_in:
+    for x in t:
+        result.append(x)
+
+    # printing output
+print(result)
+
+
+
+
+print("**** Find the occurence count an element in the Tuple *****")
+
+# Get the count of how many times 34 appears in tuple
+count = tupleObj.count(34)
+
+print("Count of 34 in tuple is : ", count)
+
+# Based on occurrence count check if element exists in tuple
+if tupleObj.count(34) > 0:
+    print("34 Found in Tuple")
+else:
+    print("34 Not Found in Tuple")
+
+
+res = [(val, pow(val, 3)) for val in list1]
