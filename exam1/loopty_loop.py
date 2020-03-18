@@ -10,12 +10,7 @@ def generate_list(start: int, stop: int, step: int = 1) -> List[int]:
     :param step: How many digits apart each number is from the others around it.
     :return: A list of integers.
     """
-    return [item for item in range(start, stop + step)]
-
-        # Driver Code
-
-    r1, r2 = -1, 1
-    print(createList(r1, r2))
+    return [item for item in range(start, stop, step)]
 
 
 def generate_list_with_strategy(start: int, stop: int, step: int, strategy: Callable) -> List[int]:
