@@ -36,11 +36,11 @@ def find_value(value_to_find, values: C) -> int:
     :param values: A List or a Set.
     :return: an integer. Either the index where the value exists or -1
     """
-    for i in values():
+    for i in values:
         if i == value_to_find:
-            return value_to_find[]
+            return values.index(value_to_find)
         if i != value_to_find:
-            return(-1)
+            return -1
 
 
 
