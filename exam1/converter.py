@@ -35,7 +35,7 @@ def kilometer_to_miles(kilometers: float) -> float:
     :param kilometers: A float representing a measurement in kilometers.
     :return: A float representing the input measurement converted to miles.
     """
-    kilometers = float(input("Enter height in kilometers:"))
+    kilometers = float(input("Enter distance in kilometers:"))
     conv = 0.621371
     miles = kilometers * conv
     print('%0.3f kilometers is equal to %0.2f miles' % (kilometers, miles))
@@ -51,6 +51,8 @@ def miles_to_kilometers(miles: float) -> float:
     :param miles: A float representing a measurement in miles.
     :return: A float representing the input measurement converted to kilometers.
     """
-    pass  # implement me
-
+    miles = float(input("Enter distance in kilometers:"))
+    conv = 0.621371
+    kilometers = miles / conv
+    print('%0.2f miles is equal to %0.2f miles' % (miles, kilometers))
 
