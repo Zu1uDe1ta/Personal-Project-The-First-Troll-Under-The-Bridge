@@ -76,7 +76,14 @@ def compare_two_strings(a: str, b: str) -> int:
     :param b: The second string.
     :return: an integer 0, 1, or -1
     """
-    pass  # implement me
+    a = len(a)
+    b = len(b)
+    if a == b:
+        return(0)
+    elif a > b:
+        return(1)
+    elif b > a:
+        return(-1)
 
 
 def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
