@@ -93,7 +93,10 @@ def find_common(tuple_a: Tuple, tuple_b: Tuple) -> Set:
     :param tuple_b: The second tuple.
     :return: A set containing items common on both tuples.
     """
-    pass  # implement me
+    tpl1_set = set(tuple_a)
+    tpl2_set = set(tuple_b)
+    commonElement = (tpl1_set & tpl2_set)
+    return(commonElement)
 
 
 def find_duplicates(tuple_in: Tuple) -> List:
