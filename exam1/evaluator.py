@@ -106,7 +106,18 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :param tuple_in: A tuple
     :return: a A list containing duplicate items in the tuple_in parameter
     """
-    pass  # implement me
+    count_map = []
+    for i in tuple_in:
+        count_map[i] = count_map.get(i, 0) + 1
+        print(count_map)
+
+    listOfTuple = [('a', 'e'), ('b', 'x'), ('b', 'x'),
+                   ('a', 'e'), ('b', 'x')]
+
+
+
+
+print(result)
 
 
 tuple_in = [(1, 2), (3, 4), (5, 6)]
@@ -117,8 +128,8 @@ for t in tuple_in:
     for x in t:
         result.append(x)
 
-    # printing output
-print(result)
+
+
 
 
 
