@@ -9,7 +9,7 @@ def meters_to_feet(meters: float) -> float:
     """
     meters = float(input())
     feet = meters // .3048
-    print('%0.2f' % (feet))
+    return('%0.2f' % (feet))
 
 
 def feet_to_meters(feet: float) -> float:
@@ -23,7 +23,7 @@ def feet_to_meters(feet: float) -> float:
     """
     feet = float(input())
     meters = feet * 0.3048
-    print('%0.2f' % (meters))
+    return('%0.2f' % (meters))
 
 
 def kilometer_to_miles(kilometers: float) -> float:
