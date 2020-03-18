@@ -36,7 +36,12 @@ def find_value(value_to_find, values: C) -> int:
     :param values: A List or a Set.
     :return: an integer. Either the index where the value exists or -1
     """
-    pass  # implement me
+    for i in values():
+        if i == value_to_find:
+            return value_to_find[]
+        if i != value_to_find:
+            return(-1)
+
 
 
 def compare_two_numbers(a: N, b: N) -> int:
@@ -51,7 +56,12 @@ def compare_two_numbers(a: N, b: N) -> int:
     :param b: The second number.
     :return: an integer 0, 1, or -1
     """
-    pass  # implement me
+    if a == b:
+        return(0)
+    elif a > b:
+        return(1)
+    elif b > a:
+        return(-1)
 
 
 def compare_two_strings(a: str, b: str) -> int:
