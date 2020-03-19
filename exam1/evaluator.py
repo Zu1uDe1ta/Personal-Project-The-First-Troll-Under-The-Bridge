@@ -112,4 +112,4 @@ def find_duplicates(tuple_in: Tuple) -> List:
         for x in t:
             result.append(x)
     x = np.array(result)
-    print(np.unique(x))
+    return(np.unique(x))
