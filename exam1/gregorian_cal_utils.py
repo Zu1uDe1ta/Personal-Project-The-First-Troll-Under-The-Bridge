@@ -6,6 +6,6 @@ def is_leap_year(year: int) -> bool:
     :return: A boolean indicating whether or not the year parameter is a leap year.
     """
     if (year % 4) == 0 and (year % 100) == 0 and (year % 400) == 0:
-        print(True)
+        return(True)
     else:
-        print(False)
+        return(False)
