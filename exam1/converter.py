@@ -9,8 +9,8 @@ def meters_to_feet(meters: float) -> float:
     :param meters: A float representing a measurement in meters.
     :return: A float representing the input measurement converted to feet.
     """
-    feet = meters / .3048
-    return('%0.2f' % (feet))
+    feet = round((meters / .3048), 2)
+    return(feet)
 
 
 def feet_to_meters(feet: float) -> float:
@@ -22,8 +22,8 @@ def feet_to_meters(feet: float) -> float:
     :param feet: A float representing a measurement in feet.
     :return: A float representing the input measurement converted to meters.
     """
-    meters = feet * 0.3048
-    return('%0.2f' % (meters))
+    meters = round((feet * 0.3048), 2)
+    return(meters)
 
 
 def kilometer_to_miles(kilometers: float) -> float:
@@ -36,8 +36,8 @@ def kilometer_to_miles(kilometers: float) -> float:
     :return: A float representing the input measurement converted to miles.
     """
     conv = 0.621371
-    miles = kilometers * conv
-    return('%0.2f' % (miles))
+    miles = round((kilometers * conv), 2)
+    return(miles)
 
 
 
@@ -51,6 +51,6 @@ def miles_to_kilometers(miles: float) -> float:
     :return: A float representing the input measurement converted to kilometers.
     """
     conv = 0.621371
-    kilometers = miles / conv
-    return('%0.2f' % (kilometers))
+    kilometers = round((miles / conv), 2)
+    return(kilometers)
 

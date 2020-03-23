@@ -1,4 +1,3 @@
-import numpy as np
 from typing import List, Tuple, Set, TypeVar
 
 N = TypeVar('N', int, float)
@@ -107,9 +106,8 @@ def find_duplicates(tuple_in: Tuple) -> List:
     :param tuple_in: A tuple
     :return: a A list containing duplicate items in the tuple_in parameter
     """
-    result = []
-    for t in tuple_in:
-        for x in t:
-            result.append(x)
-    x = np.array(result)
-    return(np.unique(x))
+    duplicates = []
+    for item in tuple_in:
+        if tuple_in.count(item) > 1 and item not in duplicates:
+            duplicates.append(item)
+    return duplicates
